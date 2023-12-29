@@ -1,0 +1,31 @@
+*************************************************************************
+Nume: Subsir
+Fisier de intrare: subsir.in
+Fisier de iesire: subsir.out
+Timp de executie/test: 0.3s (Duron 800Mhz)
+*************************************************************************
+
+    Zaharel a primit o noua provocare de la prietena lui Eugenia. Aceasta
+ii da doua siruri de lungime N, respectiv M (0<N,M<=500) si ii cere sa 
+determine lungimea celui mai lung subsir comun crescator.
+
+FORMAT INTRARE:
+    Prima linie contine doua numere N,M reprezentand lungimile sirurilor.
+Urmatoarea linie contine N numere reprezentand elementele primului sir,
+iar urmatoarea linie M numere -- elementele celui de-al doilea sir. 
+Sirurile contin numere intregi din intervalul [-2.000.000.000,2.000.000.000].
+
+EXEMPLU INTRARE:
+5 5
+2 3 4 6 5
+2 1 6 5 7
+
+FORMAT IESIRE:
+    Pe prima linie se va scrie un singur numar reprezentand lungimea celui
+mai lung subsir comun crescator.
+
+EXEMPLU IESIRE:
+2
+
+DETALII IESIRE:
+Subsirul este (2, 6) sau (2, 5)

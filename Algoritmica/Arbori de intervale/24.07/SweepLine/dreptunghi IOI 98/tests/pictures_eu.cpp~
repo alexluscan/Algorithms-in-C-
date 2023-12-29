@@ -1,0 +1,117 @@
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+
+#define mid  ( (l + r) / 2 - ((l + r) % 2 && (l + r < 0)) )
+const int DIM = 5001; 
+const int DIM_TREE = 200000;
+
+ifstream fin("picture5.in");
+ofstream fout("pict.out");
+
+struct Segm {
+	int x, y1, y2, tip;
+};
+
+Segm V[DIM], H[DIM];
+int Cnt[DIM_TREE], L[DIM_TREE];
+int n, a, b, Val, k;
+
+void Update(int nod, int l, int r, int v);
+void Read();
+int Solve(Segm a[], int v);
+
+struct Cmp {
+	bool operator()(const Segm& a, const Segm& b)
+	{
+		if  ( a.x < b.x || ( a.x == b.x && a.tip > b.tip ) )
+			return true;
+		return false;
+	}
+};
+
+int main()
+{
+	Read();
+	fout << Solve(V, 1) + Solve(H, 1) << '\n';
+	fin.close();
+	fout.close();
+	return 0;
+}
+
+int Solve(Segm s[], int v)
+{
+	int Perim = 0, temp = 0;
+	sort(s, s + 2 * n, Cmp());
+	for ( int i = 0; i < 2 * n; ++i )
+	{
+		a = s[i].y1, b = s[i].y2   -   1; Val = s[i].tip; // in arbore: [a, b - 1]
+		Update(1, -10001, 10001, v);
+	//	cout << "L[1] = " << L[1]; cin.get(); 
+		Perim += abs(temp - L[1]);
+	//	cout << "Perim = " << Perim; cin.get();
+		temp = L[1];
+	}
+	return Perim;
+}
+
+void Update(int nod, int l, int r, int v)
+{
+//	cout << "nod = " << nod; cin.get(); 
+	if ( a <= l && r <= b )
+	{
+			k++;
+//		cout << "ll = " << l << ' ' << "rr = " << r; cin.get();
+		Cnt[nod] += Val;
+		
+		L[nod] = 0;
+		if ( Cnt[nod] > 0 )
+		{	
+			//if ( l < r )
+				L[nod] = r - l + v;
+		}
+		else
+		{
+			if ( l < r )
+				L[nod] = L[2*nod] + L[2*nod+1];
+		}
+	
+		return;
+	}
+//	cout << "a = " << a << " b = " << b << '\n'
+//		 << "l = " << l << " r = " << r << " mid = " << mid; cin.get();  
+	if ( a <= mid ) Update(2*nod, l, mid, v);
+	if ( b > mid ) Update(2*nod + 1, mid + 1, r, v);
+	
+	L[nod] = 0;
+	if ( Cnt[nod] > 0 )
+	{	
+		//if ( l < r )
+			L[nod] = r - l + v;
+	}
+	else
+	{
+		if ( l < r )
+			L[nod] = L[2*nod] + L[2*nod + 1];
+	}
+}
+
+void Read()
+{
+	int x1, y1, x2, y2;
+	fin >> n;
+	for ( int i = 0; i < n; ++i )
+	{
+		fin >> x1 >> y1 >> x2 >> y2;
+		V[2*i].x = x1; V[2*i].y1 = y1; V[2*i].y2 = y2; V[2*i].tip = 1;
+		V[2*i+1].x = x2; V[2*i+1].y1 = y1; V[2*i+1].y2 = y2; V[2*i+1].tip = -1;
+		
+		H[2*i].x = y1; H[2*i].y1 = x1; H[2*i].y2 = x2; H[2*i].tip = 1;
+		H[2*i+1].x = y2; H[2*i+1].y1 = x1; H[2*i+1].y2 = x2; H[2*i+1].tip = -1; 
+	}
+}
+
+

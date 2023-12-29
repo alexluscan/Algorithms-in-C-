@@ -1,0 +1,3 @@
+Although there may be up to 30 contestants in total, there are at most 16 in any component of the dependency graph. 
+The algorithm may be applied separately to each component. If components with sizes M1 and M2 can be ordered in C1 and C2 ways respectively, 
+then their union can be ordered in C1 * C2 * Comb(M1 + M2, M1) different ways.

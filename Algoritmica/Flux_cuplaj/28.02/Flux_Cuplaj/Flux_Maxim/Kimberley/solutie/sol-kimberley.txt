@@ -1,0 +1,38 @@
+Autor: prof. Constantin Galatan
+
+
+Daca salile i si j sunt unite printr-o galerie, iar la momentul t, un miner  se afla in sala i si va face deplasarea 
+spre sala j in intervalul de timp [t, t+1], atunci incepand cu momentul t+1,  galeria devine din nou accesibila.
+
+
+Asociem problemei o retea de transport. Nodurile retelei se construiesc din perechi (i, t), unde i este un
+varf din graful initial si  t este momentul de timp la care un miner se poate gasi in sala i.
+
+
+Fiecarei deplasari i->j intr-o galerie intre salile i si j, ii corespunde in reteaua de transport  familia de arce
+
+(i, t) - > ( j, t + 1 ) 
+
+cu t din intervalul [0, tmax], si tmax = N + M. Capacitatea  tuturor acestor arce este 1,  deoarece intr-o unitate de 
+timp, un singur miner poate traversa galeria i -> j.
+ 
+De observat ca in reteaua reziduala, exista si arcul (i, t) -> (j, t - 1), daca capacitatea c[j][i] = 1, iar la momentul 
+t - 1, un miner incepe traversarea galeriei j->i (este flux de la j spre i). Intuitiv, o parcurgere a acestui arc, 
+corespunde unei "calatorii in trecut" in galeria i -> j, in sens opus fluxului. 
+
+
+Minerii se pot acumula (ca numar) in sali. De aceea, vom introduce in retea muchii de capacitate c[i][i] = infinit, intre 
+toate perechile de sali (i, t) -> (i, t + 1), cu t = 0, 1, ... tmax;
+
+
+Pentru fiecare unitate de timp, incepand cu t = 1, se determina un flux maxim in reteaua de transport, intre nodul sursa 
+(S, 0) si cel destinatie, (D, t). 
+
+In acest fel, ne asiguram ca fluxul suplimentar introdus in retea de fiecare data, este egal cu numarul maxim de mineri 
+care ajung la destinatie in fiecare unitate de timp. Numarul minerilor care se misca prin intreaga retea in acelasi 
+interval de timp, poate fi, desigur mai mare.
+
+Fie T,  timpul minim necesar deplasarii tuturor minerilor la destinatie. Fluxul total care poate fi trimis in timpul T in 
+retea, este egal cu numarul total de mineri care ajung la destinatie.
+
+Cand fluxul total trimis in timpul t in retea devine egal cu M, algoritmul se opreste, iar T = t.

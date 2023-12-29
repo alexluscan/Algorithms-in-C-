@@ -1,0 +1,148 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: x-small; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #191970; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: white
+}
+PRE {
+	MARGIN-TOP: 5px; FONT-SIZE: small; MARGIN-BOTTOM: 10px; FONT-FAMILY: "Courier New", Courier, monospace
+}
+TT {
+	MARGIN-TOP: 5px; FONT-SIZE: small; MARGIN-BOTTOM: 10px; FONT-FAMILY: "Courier New", Courier, monospace
+}
+CODE {
+	MARGIN-TOP: 5px; FONT-SIZE: small; MARGIN-BOTTOM: 10px; FONT-FAMILY: "Courier New", Courier, monospace
+}
+P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 12px; MARGIN-LEFT: 0px; TEXT-ALIGN: justify
+}
+HR {
+	WIDTH: 100%; COLOR: #191970; HEIGHT: 1px
+}
+HR.mala {
+	WIDTH: 70%
+}
+A {
+	FONT-WEIGHT: 700; COLOR: #f4a460; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #cd853f
+}
+A:hover {
+	COLOR: #00bfff
+}
+A:active {
+	COLOR: #00bfff
+}
+H1 {
+	MARGIN-TOP: 0px; FONT-SIZE: large; MARGIN-BOTTOM: 0px; TEXT-ALIGN: center
+}
+H2 {
+	MARGIN-TOP: 30px; FONT-SIZE: medium; MARGIN-BOTTOM: 5px; TEXT-ALIGN: center
+}
+H3 {
+	MARGIN-TOP: 20px; FONT-SIZE: medium; MARGIN-BOTTOM: 5px; TEXT-ALIGN: left
+}
+H4 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 105%; MARGIN-BOTTOM: 0px; TEXT-ALIGN: left
+}
+H5 {
+	MARGIN-TOP: 10px; FONT-SIZE: medium; MARGIN-BOTTOM: 0px; TEXT-ALIGN: center
+}
+H6 {
+	MARGIN-TOP: 0px; FONT-SIZE: x-small; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 15%; COLOR: red; TEXT-ALIGN: left
+}
+.error {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: red
+}
+.auth {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 130%; MARGIN-BOTTOM: 10px; COLOR: green; TEXT-ALIGN: center
+}
+.podklad {
+	BACKGROUND-COLOR: white
+}
+.small {
+	FONT-SIZE: xx-small; TEXT-TRANSFORM: uppercase
+}
+.formular {
+	BORDER-RIGHT: #191970 1px solid; BORDER-TOP: #191970 1px solid; BORDER-LEFT: #191970 1px solid; COLOR: black; BORDER-BOTTOM: #191970 1px solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffef
+}
+.tlacitko {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-LEFT-COLOR: #191970; BORDER-BOTTOM-WIDTH: 3px; BORDER-BOTTOM-COLOR: #191970; COLOR: #191970; BORDER-TOP-COLOR: #191970; BORDER-RIGHT-WIDTH: 3px; BORDER-RIGHT-COLOR: #191970
+}
+FORM {
+	MARGIN: 0px
+}
+
+@media Print    
+{
+A {
+	FONT-WEIGHT: normal; COLOR: black; TEXT-DECORATION: underline
+}
+A:hover {
+	FONT-WEIGHT: normal; COLOR: black; TEXT-DECORATION: underline
+}
+A:active {
+	FONT-WEIGHT: normal; COLOR: black; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: normal; COLOR: black; TEXT-DECORATION: underline
+}
+.navbar {
+	DISPLAY: none
+}
+.footer {
+	DISPLAY: none
+}
+BODY {
+	FONT-SIZE: xx-small; COLOR: black
+}
+PRE {
+	FONT-SIZE: x-small
+}
+TT {
+	FONT-SIZE: x-small
+}
+CODE {
+	FONT-SIZE: x-small
+}
+H1 {
+	FONT-SIZE: medium
+}
+H2 {
+	FONT-SIZE: small
+}
+H3 {
+	FONT-SIZE: small
+}
+H5 {
+	FONT-SIZE: small
+}
+    }
+TABLE {
+	FONT-SIZE: x-small; BACKGROUND-COLOR: #fafad2
+}
+TH {
+	COLOR: #fafad2; BACKGROUND-COLOR: #191970
+}
+TABLE.navbar {
+	FONT-WEIGHT: 700; FONT-SIZE: xx-small; MARGIN: 0px; TEXT-TRANSFORM: uppercase; WIDTH: 100%; COLOR: #fafad2; FONT-FAMILY: inherit; BACKGROUND-COLOR: #191970
+}
+TABLE.navbar TH {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px; BORDER-BOTTOM: #fafad2 1px solid; TEXT-ALIGN: left
+}
+TABLE.navbar TD {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px; BORDER-BOTTOM: #fafad2 1px solid; TEXT-ALIGN: left
+}
+TABLE.vysledky TH {
+	COLOR: #fafad2; BACKGROUND-COLOR: #191970; TEXT-ALIGN: left
+}
+TABLE.title {
+	WIDTH: 100%; BACKGROUND-COLOR: white
+}
+TABLE.page {
+	WIDTH: 97%; BACKGROUND-COLOR: white
+}
+TABLE.footer {
+	FONT-SIZE: xx-small; TEXT-TRANSFORM: uppercase; BACKGROUND-COLOR: white
+}
+TABLE.navbar TH.clock {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; TEXT-TRANSFORM: lowercase; LETTER-SPACING: 1px; TEXT-ALIGN: right
+}

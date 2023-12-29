@@ -1,0 +1,60 @@
+Descriem o solutie bazata un algoritm de programare dinamica.
+Fie nr[v][c] - numarul minim de lansari la apa, cu v vikingi 
+diponibili si utilizarea a c corabii.
+
+Consideram intervalul [v1..v2]. Informatiile pe care le avem despre 
+acest interval, sunt ca vom putea sa lansam corabii cu minimum v1 
+si maximum v2 vikingi la bord si ca putem efectua cel mult v2-v1+1 
+lansari. 
+
+Facem urmatoarea observatie: tuturor intervalelor de aceeasi 
+lungime, le corespunde un acelasi numar minim de lansari la apa. 
+De pilda, pentru intervalul [1..10], este necesar sa fie facute 
+un acelasi numar minim de teste ca si pentru intervalul [11..20], 
+intrucat numarul minim de teste pe interval nu depide in nici un 
+fel de numarul v de vikingi utilizati pe test, ci numai de lungimea 
+intervalului.
+
+
+Pentru a determina nr[v][c], presupunem ca se lanseaza pe rand cate o 
+corabie, cu un numar vi de vikingi. 
+
+Pentru fiecare valoare vi din intervalul [1..v], sunt posibile doua 
+situatii:
+
+1. corabia se scufunda, iar atunci intervalul de testare se restrange 
+la [1..vi-1].
+
+2. corabia nu se scufunda, iar in acest caz intervalul de testare se 
+restrange la [vi + 1, v], interval echivalent cu [1, v - vi]
+
+
+Astfel, in starea (v, c) se poate ajunge din  starile (v-vi, c), daca 
+cei vi vikingi nu scufunda corabia sau din starea (vi-1, c-1), daca 
+corabia se scufunda cu vi vikingi la bord. 
+
+Se doreste un optim pentru cazul cel mai defavorabil, adica trebuie 
+aleasa intotdeauna acea varianta dintre cele doua de mai sus, care  
+presupune un numar mai mare de lansari la apa:
+
+nr[v][c] = 1 + min( max(nr[vi-1][c - 1], nr[v-vi][c]) )
+
+si
+
+nr[vi][1] = vi;   (cu o singura corabie, trebuie efectuate exact vi lansari)
+
+unde 
+1 <= vi <= v
+1 <= v <= V
+2 <= c <= C
+ 
+Solutia se obtine in nr[V][C]
+
+Pentru optimizarea spatiului de memorie, se retin numai coloana curenta
+si coloana precedenta. O alta optimizare, a timpului de executie de data 
+aceasta, se poate face observand ca nu este necesar sa se completeze 
+(pe coloane) intreaga matrice, deoarece  incepand cu un anumit indice j 
+de coloana, toate celelalte coloane vor fi identice.
+
+
+

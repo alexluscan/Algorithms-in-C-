@@ -1,0 +1,38 @@
+Author: Constantin Galatan
+
+If rooms i and j are connected via a tunnel and at moment t, a miner is in room i and moves towards room j 
+in time interval [t, t+1], then starting with moment t+1, the tunnel becomes accessible again.
+
+
+We associate to the problem a transportation network. The nodes of the network are built out of pairs (i, t), 
+where i is a vertex from the initial graph and t is the moment in time when a miner can be found in room i.
+
+
+Each move i->j in a tunnel between rooms i and j corresponds in the transportation network to edge family
+
+(i, t) - > ( j, t + 1 ) 
+
+with t from interval [0, tmax], and tmax = N + M. The capacity of all these edgess is 1 because in one time 
+unit a single miner can travel tunnel i -> j.
+ 
+what should be noticed is that in the residual network there is also edge (i, t) -> (j, t - 1), 
+if capacity c[j][i] = 1, and at moment t - 1 a miner begins crossing tunnel j->i (flow from j to i). 
+Intuitively, one trip through this edge corresponds to a "trip in the past" in gallery i -> j, in opposite flow direction. 
+
+
+Miners can accumulate (as number) in the rooms. That is why we will insert into the network, edges of capacity c[i][i] = infinite, 
+between all (i, t) -> (i, t + 1) room pairs, with t = 0, 1, ... tmax;
+
+
+For each time unit, beginning with t = 1, we determine a maximum flow in the transportation network between 
+the source (S, 0) and destination (D, t) nodes. 
+
+This way we ensure that the additional flow entered into the network every time is equal to the maximum number 
+of miners that reach the destination each time unit. The number of miners moving through the entire network at 
+the same time can, of course, be larger.
+
+Be there T,  the minimum amount of time necessary to move all miners to the destination. The total flow that 
+can be sent in time T in the network is equal to the total number of miners that reach the destination.
+
+When the total flow sent in the network in time t becomes equal to M, the algorithm halts and T = t.
+

@@ -1,0 +1,821 @@
+@charset "utf-8";
+/* CSS Document 
+
+008cbd
+*/
+
+.nowrap
+{
+	white-space:pre;
+}
+
+pre.wrap
+{
+	white-space:pre-wrap;
+}
+
+.negru
+{
+	color:#000;
+}
+
+.bleumarin
+{
+	color:#048;
+}
+
+.star
+{
+	color:#f60;
+	width:10px;
+}
+
+.attention
+{
+	color:#f60;
+}
+
+.courier
+{
+	font-family:"Courier New", Courier, monospace;
+}
+
+div.help img
+{
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+
+.over
+{
+	background-color:#f9f9f9;
+}
+.cautare
+{
+	padding-right:0px;
+	padding-top:5px;
+	padding-bottom:3px;
+	margin-right:0px;
+	float:right;
+	width:200px;
+}
+.cautare a:link {
+	color: #fff;
+	text-decoration: none;
+}
+.cautare a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+.cautare a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+.cautare a:active {
+	text-decoration: none;
+	color: #fff;
+}
+.cautare .formular
+{
+	padding-right:10px;
+	background-image:url(cautare.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	height:25px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+.cautare .text 
+{
+	background-color:#fff;
+	border:0px;
+	padding-left:0px;
+	padding-right:0px;
+	width:108px;
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing:0px;
+	font-size:11px;
+}
+
+.cautare .formular .imagine
+{
+	border:0px;
+	height:26px;
+	width:10px;
+}
+
+.antet
+{
+	clear:both;
+	width:1000px;
+	height:145px;
+	background-image:url(antet.jpg);
+	background-repeat:no-repeat;
+	background-position:top left;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.subsol
+{
+	clear:both;
+	width:1000px;
+	height:80px;
+	background-image:url(subsol.jpg);
+	background-repeat:no-repeat;
+	background-position:top left;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.corp
+{
+	width:980px;
+	background-image:url(corp.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:0px;
+}
+
+.corp .tabel .centrumeniu .meniu	
+{
+	background-image:url(h1.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin-left:15px;
+	height:28px;
+	color:#444;	
+}
+
+.campion
+{
+	float:left;
+	text-align:left;
+	padding-left:20px;
+	padding-top:5px;
+	color:#fff;
+}
+.campion a:link {
+	color: #fff;
+	text-decoration: none;
+}
+.campion a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+.campion a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+.campion a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.history
+{
+	float:right;
+	text-align:right;
+	padding-right:20px;
+	padding-top:5px;
+	color:#fff;
+}
+.history a:link {
+	color: #fff;
+	text-decoration: none;
+}
+.history a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+.history a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+.history a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+.corp .tabel .centrumeniu .element
+{
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin-left:15px;
+	margin-top:10px;
+	margin-bottom:0px;
+	padding: 4px 4px 4px 4px;	
+	color:#444;	
+}
+
+.corp .tabel .centrumeniu .titlustanga
+{
+	background-color:#eeeeee;
+	color:#999;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing:1px;
+	margin-left:25px;
+	margin-bottom:5px;
+	margin-top:10px;
+	clear:both;	
+}
+
+
+.corp .tabel .centrumeniu .titlu
+{
+	background-color:#f6f6f6;
+	color:#444;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin-left:15px;
+	padding: 4px 4px 4px 4px;	
+	clear:both;	
+}
+
+.corp .tabel .centrumeniu .descriere
+{
+	background-color:#ffffff;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:15px;
+	margin-right:0px;
+	padding: 4px 10px 4px 10px;	
+	color:#444;	
+}
+
+.corp .tabel .centrumeniu .meniu a:link
+{
+	color:#444;
+	text-decoration:none;
+	background-image:url(h1none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;
+}
+.corp .tabel .centrumeniu .meniu a:hover
+{
+	color:#222;
+	text-decoration:none;	
+	background-image:url(h1over.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .meniu a:active
+{
+	color:#444;
+	text-decoration:none;	
+	background-image:url(h1none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .meniu a:visited
+{
+	color:#444;
+	text-decoration:none;	
+	background-image:url(h1none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .element a:link
+{
+	color:#444;
+	text-decoration:none;
+}
+.corp .tabel .centrumeniu .element a:hover
+{
+	color:#222;
+	text-decoration:none;	
+}
+.corp .tabel .centrumeniu .element a:active
+{
+	color:#444;
+	text-decoration:none;	
+}
+.corp .tabel .centrumeniu .element a:visited
+{
+	color:#444;
+	text-decoration:none;	
+}
+.corp .tabel .centrumeniu .titlu a:link
+{
+	background-image:url(h4none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	color:#444;
+	text-decoration:none;
+	padding-left:10px;
+}
+.corp .tabel .centrumeniu .titlu a:hover
+{
+	background-image:url(h4over.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	color:#222;
+	text-decoration:none;	
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .titlu a:active
+{
+	background-image:url(h4none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	color:#444;
+	text-decoration:none;	
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .titlu a:visited
+{
+	background-image:url(h4none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	color:#444;
+	text-decoration:none;	
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .descriere a:link
+{
+	color:#444;
+	text-decoration:none;
+	padding-left:10px;
+}
+.corp .tabel .centrumeniu .descriere a:hover
+{
+	color:#222;
+	text-decoration:none;	
+	background-image:url(h4over.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .descriere a:active
+{
+	color:#444;
+	text-decoration:none;	
+	background-image:url(h4none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .centrumeniu .descriere a:visited
+{
+	color:#444;
+	text-decoration:none;	
+	background-image:url(h4none.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:10px;	
+}
+.corp .tabel .suscontinut
+{
+	background-image:url(suscontinut.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	vertical-align:bottom;
+	height:45px;
+	padding-left:20px;
+	text-align:left;
+	vertical-align:top;	
+	padding-top:8px;
+	color:#000;
+}
+
+.backk
+{
+	margin-top:0px;
+	padding-top:0px;
+}
+
+.corp .tabel .susmeniu
+{
+	background-image:url(susmeniu.png);
+	background-position:top left;
+	background-repeat:no-repeat;
+	height:35px;
+}
+
+.corp .tabel .centrucontinut
+{
+	background-color:#fff;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.corp .tabel .centrucontinut .continut
+{
+	margin-bottom:10px;
+	clear:both;
+}
+
+.corp .tabel .centrucontinut .locformular
+{
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:10px;
+	clear:both;
+	background-color:#f3f3f3;
+	margin-bottom:20px;
+	margin-top:0px;
+	border:1px solid #e9e9e9;
+}
+
+.ms80
+{
+	margin-left:90px;
+}
+
+.ms160
+{
+	margin-left:170px;
+}
+
+div.hr {
+  height: 20px;
+  background: #fff url(hr.jpg) no-repeat scroll center left;
+}
+div.hr hr {
+  display: none;
+}
+
+.corp .tabel .centrucontinut .inputsearchquery
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-left:10px;
+	margin-right:10px;
+	width:470px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+}
+
+.errorform
+{
+/*	color:#f60;*/
+}
+
+.corp .tabel .centrucontinut .inputconnectloginnamepassword
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:370px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+}
+
+.corp .tabel .centrucontinut .inputconnectloginnamepassword2
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:245px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+}
+
+.corp .tabel .centrucontinut .inputregisterloginnamepassword3
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:460px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+}
+
+.corp .tabel .centrucontinut .inputregisterloginnamepassword2
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:320px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .inputselect
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:380px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+}
+
+.corp .tabel .centrucontinut .selectm
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .selecty
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+
+
+.corp .tabel .centrucontinut .inputregisterloginnamepassword
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:320px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .inputselectregister
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:330px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .inputselectregistermessage
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:200px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .inputselectlanguage
+{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	width:330px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:4px 4px 4px 4px;
+	margin-right:10px;
+}
+
+.corp .tabel .centrucontinut .loctabel
+{
+	padding-bottom:4px;
+	clear:both;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabelautor
+{
+	border:0px;
+	width:740px;
+	margin-bottom:10px;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabelautor .foto
+{
+	border:2px solid #ccc;
+}
+
+
+
+.corp .tabel .centrucontinut .loctabel .tabel
+{
+	border:1px solid #ccc;
+	width:740px;
+	margin-bottom:10px;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel tr.primul td
+{
+	color:#048;
+	font-weight:bold;
+	background-color:#f3f3f3;
+}
+.corp .tabel .centrucontinut .loctabel .tabel tr td.primul
+{
+	color:#048;
+	font-weight:bold;
+	background-color:#f3f3f3;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel2
+{
+	border:1px solid #ddd;
+	width:740px;
+	margin-bottom:10px;
+	background-color:#f6f6f6;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel2 tr.primul td
+{
+	color:#333;
+	padding:2px 5px 2px 5px;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel3
+{
+	border:1px solid #ddd;
+	width:350px;
+	margin-bottom:10px;
+	background-color:#f6f6f6;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel3 tr.primul td
+{
+	color:#333;
+	padding:2px 5px 2px 5px;
+}
+
+.corp .tabel .centrucontinut .loctabel .tabel td.necunoscut
+{
+	color:#999;
+}
+
+.necunoscut
+{
+	color:#999;
+}
+
+
+.corp .tabel .centrucontinut .loctabel .tabel td
+{
+	border:1px solid #ddd;
+}
+.corp .tabel .centrucontinut .titlu
+{
+	font-size:24px;
+	color:#05a;
+	margin-bottom:10px;
+	font-weight:bold;
+	clear:both;
+}
+.corp .tabel .centrucontinut .subtitlu
+{
+	font-size:16px;
+	color:#06c;
+	margin-bottom:10px;
+	font-weight:bold;
+	clear:both;
+}
+
+.corp .tabel .centrucontinut .titlu_grup
+{
+	font-size:16px;
+	color:#05a;
+	margin-bottom:10px;
+	clear:both;
+	font-weight:bold;
+}
+
+.corp .tabel .centrucontinut .titlu_tema
+{
+	font-size:15px;
+	color:#05a;
+	margin-bottom:9px;
+	clear:both;
+	font-weight:bold;
+}
+
+.corp .tabel .centrucontinut .titlu_sarcina
+{
+	font-size:14px;
+	color:#05a;
+	margin-bottom:8px;
+	clear:both;
+	font-weight:bold;
+}
+
+
+.primul a:link {
+	color: #05a;
+	text-decoration: none;
+}
+.primul a:visited {
+	text-decoration: none;
+	color: #05a;
+}
+.primul a:hover {
+	text-decoration: none;
+	color: #06c;
+}
+.primul a:active {
+	text-decoration: none;
+	color: #05a;
+}
+
+.corp .tabel .centrumeniu
+{
+	background-color:#eeeeee;
+	width:200px;
+}
+
+.corp .tabel .joscontinut
+{
+	background-image:url(joscontinut.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	height:35px;
+	padding-right:17px;
+	text-align:right;
+	color:#ccc;
+}
+
+.corp .tabel .josmeniu
+{
+	background-image:url(josmeniu.png);
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	height:35px;
+}
+
+
+.bordura
+{
+	width:1000px;
+	height:25px;
+	background-image:url(bordura.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+
+body {
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color:#ddd;
+	letter-spacing:0px;
+}
+a:link {
+	color: #003366;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #003366;
+}
+a:hover {
+	text-decoration: underline;
+	color: #003366;
+}
+a:active {
+	text-decoration: none;
+	color: #003366;
+}
+
+div.enter
+{
+	font-size:16px;
+	color:#ccc;
+	margin-left:100px;
+}

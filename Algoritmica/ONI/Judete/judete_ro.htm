@@ -1,0 +1,125 @@
+<HTML><HEAD><TITLE>judete</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+</head>
+
+<BODY text=#000000 vLink=#0000cc aLink=#0000cc link=#0000cc bgColor=#ffffff>
+<P><b><FONT face="Arial, Helvetica, sans-serif" size=3> judete</FONT></b></P>
+<P>
+<FONT face="Arial, Helvetica, sans-serif" size=2> In tara maimutelor exista <font face="Courier New, Courier, mono">N</font> 
+orase numerotate de la <font face="Courier New, Courier, mono">1</font> la <font face="Courier New, Courier, mono">N</font>. 
+Orasele sunt conectate prin sosele, astfel incat exista un drum unic intre oricare 
+2 orase din tara. Nefiind in stare sa administreze toate orasele presedintele 
+hotaraste urmatoarele: 
+<OL type="a">
+  <LI> tara va fi impartita intr-un numar de judete, astfel incat fiecare oras 
+    sa apartina exact unui judet 
+  <LI> drumul dintre oricare 2 orase din acelasi judet nu trece prin orase din 
+    alt judet 
+  <LI> numarul minim de orase dintr-un judet este <font face="Courier New, Courier, mono">K</font> 
+</ol>
+Fie <font face="Courier New, Courier, mono">T</font> maximul dintre numarul de 
+orase apartinand aceluiasi judet. 
+<P><B><FONT face="Arial, Helvetica, sans-serif" size=3>Cerinta</FONT></b></P>
+<FONT 
+size=3> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=2> Scrieti un program care sa 
+  gaseasca o impartire in judete cu <font face="Courier New, Courier, mono">T</font> 
+  minim pentru o configuratie de orase si sosele date. </FONT></P>
+</FONT><B> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=3>Date de intrare</FONT></P>
+</B> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=2> Pe prima linie a fisierului 
+  de intrare <font face="Courier New, Courier, mono">judete.in</font> sunt scrise 
+  cele doua numere naturale <font face="Courier New, Courier, mono">N</font> , 
+  <font face="Courier New, Courier, mono"> K</font> separate printr-un singur 
+  spatiu.<BR>
+  Pe urmatoarele <font face="Courier New, Courier, mono">N-1</font> linii sunt 
+  scrise cate doua numere naturale cuprinse intre <font face="Courier New, Courier, mono">1</font> 
+  si <font face="Courier New, Courier, mono">N</font>, separate prin spatiu, reprezentand 
+  doua orase intre care exista o sosea.</font></P>
+<B> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=3>Date de iesire</FONT></P>
+</B> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=2> Prima linie a fisierului 
+  <font face="Courier New, Courier, mono">judete.out</font> va contine <font face="Courier New, Courier, mono">T</font> 
+  minim pentru configuratia din fisierul de intrare.</FONT></P>
+<B> 
+<P><FONT face="Arial, Helvetica, sans-serif" 
+size=3>Restrictii</FONT> </P>
+</B> 
+<UL>
+  <FONT face="Courier New" size=3> 
+  <LI><FONT face="Courier New, Courier, mono" size=2>2 &lt; N, K &lt; 128</FONT></LI>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">Pe soselele din</font></LI>
+  </FONT><font face="Arial, Helvetica, sans-serif" size="2"> tara maimutelor se 
+  circula in ambele sensuri.</font> 
+</UL>
+<B> 
+<P><font size="3">Exemplu</font></P>
+</B> 
+<P align=left> 
+<TABLE cellSpacing=1 cellPadding=9 width=874 border=1>
+  <TBODY> 
+  <TR> 
+    <TD vAlign=top width="33%"><FONT face="Courier New" size=3> 
+      <P><font face="Courier New, Courier, mono" size="2">judete.in</font> </P>
+      </FONT></TD>
+    <td valign=top width="19%"><font face="Courier New" size=3> 
+      <p><font face="Courier New, Courier, mono" size="2">judete.out</font> </p>
+      </font></td>
+    <TD vAlign=top width="48%"><FONT face="Courier New" size=3> 
+      <P><font face="Arial, Helvetica, sans-serif" size="2">Explicatie</font> 
+      </P>
+      </FONT></TD>
+  </TR>
+  <TR> 
+    <TD vAlign=top width="33%"><FONT face="Courier New" size=3> 
+      <PRE><font face="Courier New, Courier, mono">10 3
+1 2
+2 3
+3 4
+3 5
+2 6
+6 7
+6 8
+8 9
+1 10</font></pre>
+      </FONT></TD>
+    <td valign=top width="19%"><font face="Courier New" size=3> 
+      <p> 
+      <pre><font face="Courier New, Courier, mono">4 </font></pre>
+      </font> 
+      <p></p>
+    </td>
+    <TD vAlign=top width="48%"><FONT face="Courier New" size=3> 
+      <P>
+      </FONT> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2">O impartire posibila 
+        a oraselor in judete este:<br>
+        <font face="Courier New, Courier, mono">1</font>, <font face="Courier New, Courier, mono">2</font>, 
+        <font face="Courier New, Courier, mono"> 10</font><br>
+        <font face="Courier New, Courier, mono">3</font>, <font face="Courier New, Courier, mono">4</font>, 
+        <font face="Courier New, Courier, mono">5</font><br>
+        <font face="Courier New, Courier, mono">6</font>, <font face="Courier New, Courier, mono">7</font>, 
+        <font face="Courier New, Courier, mono"> 8</font>, <font face="Courier New, Courier, mono">9</font><br>
+        Fiecare oras apartine exact unui singur judet. <br>
+        Fiecare judet contine cel putin <font face="Courier New, Courier, mono">3</font> 
+        orase.<br>
+        Numarul maxim de orase dintr-un judet este <font face="Courier New, Courier, mono">4</font> 
+        (si acesta este minim posibil).</font></p>
+    </TD>
+  </TR>
+  </TBODY> 
+</TABLE>
+<P></P>
+<FONT size=3> 
+<P><FONT face="Arial, Helvetica, sans-serif" size=2><B>Timp maxim de executie/test</B>: 
+  0.1 secunde</FONT></P>
+</FONT></font>
+<P align="right"><font face="Arial, Helvetica, sans-serif" size="2"><I>Fechete 
+  Dan Ionut<br>
+  </I>Universitatea Bucuresti<br>
+  Facultatea de Matematica si Informatica<br>
+  <A 
+href="mailto:f_dany@eminem.com">mailto:f_dany@eminem.com</A></font></P>
+</BODY></HTML>

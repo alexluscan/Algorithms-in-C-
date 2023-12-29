@@ -1,0 +1,96 @@
+IDEA
+
+We need to output the sum of a given range in this problem. In order to exploit the segtree construction, we store for each node in segtree, 
+the sum of the elements in the interval represented by this node. For example, node [4, 6] will store the sum of a[4]+a[5]+a[6]. 
+Then, for each query about sum of an interval, we can just find the at most 2*log_n segments to cover this interval and output their sum. 
+This can be done in O(log n) time.
+
+However, trouble comes when we try to switch the value of an segment. When switching the value in a seg tree node, the straightforward method 
+is to switch the sum in that node along with the sums of all its children. 
+However, some query might switch the value of the entire array and cause O(n) operations.
+
+The solution to this problem is lazy propagation. That is, when we encounter a switch operation for a node in seg tree, 
+we do not immediately do the switch operation on this node and all its children. 
+We just create a sign on this node to represent that this node has been switched and postpone the real switch 
+operation until this node is queried by output sum operation. 
+What's left is the situation where a node involved in the summation has the sign. 
+We first resolve this sign, then set the signs of its two children (propagation) and fix the sum of this node to the switched value.
+
+With lazy propagation, we simply find a set of nodes in the seg tree which cover this given interval and look at all its signs. 
+We do not actually need to perform the switch during update, but rather postpone it to the sum query. 
+This lowers the complexity of the switch operation to O(log n) and leaves the complexity of the sum operation unchanged.
+
+
+
+
+C++ Code
+
+
+ #include <iostream>
+using namespace std;
+
+int p2;
+int tree[700000]={0};
+int flip[700000]={0};
+int push[700000]={0};
+
+void update(int cx, int cy, int qx, int qy, int n=1)
+{
+ if (cx >= cy) return;
+ 
+ if (flip[n] % 2) tree[n] = (cy-cx) - tree[n];
+ flip[n] = 0;
+ flip[n*2] += push[n];
+ flip[n*2+1] += push[n];
+ push[n*2] += push[n];
+ push[n*2+1] += push[n];
+ push[n] = 0;
+ 
+ if (cy <= qx || cx > qy) return;
+ 
+ if (cx >= qx && cy-1 <= qy) {
+  tree[n] = (cy-cx) - tree[n];
+  push[n]++;
+  return;
+ }
+ 
+ update(cx, (cx+cy)/2, qx, qy, n*2);
+ update((cx+cy)/2, cy, qx, qy, n*2+1);
+ tree[n] = tree[n*2] + tree[n*2+1];
+}
+
+int query(int cx, int cy, int qx, int qy, int n=1)
+{
+ if (cx >= cy) return 0;
+ if (cy <= qx || cx > qy) return 0;
+
+ if (flip[n] % 2) tree[n] = (cy-cx) - tree[n];
+ flip[n] = 0;
+ flip[n*2] += push[n];
+ flip[n*2+1] += push[n];
+ push[n*2] += push[n];
+ push[n*2+1] += push[n];
+ push[n] = 0;
+ 
+ if (cx >= qx && cy-1 <= qy) return tree[n];
+ return query(cx, (cx+cy)/2, qx, qy, n*2) + query((cx+cy)/2, cy, qx, qy, n*2+1);
+}
+
+int main()
+{
+ 
+ int N, M;
+ scanf("%d %d", &N, &M);
+ p2 = 1;
+ while (p2 < N) p2 *= 2;
+ 
+ while (M--)
+ {
+  int e, a, b;
+  scanf("%d %d %d", &e, &a, &b);
+  a--, b--;
+  if (e) printf("%d\n", query(0, p2, a, b));
+  else update(0, p2, a, b);
+ }
+}
+

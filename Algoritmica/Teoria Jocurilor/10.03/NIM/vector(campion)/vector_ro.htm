@@ -1,0 +1,112 @@
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>vector</title></head>
+<body alink="#0000cc" bgcolor="#ffffff" link="#0000cc" text="#000000" vlink="#0000cc">
+<b>
+<p><font face="Arial, Helvetica, sans-serif" size="4">vector</font></p>
+</b> 
+<p><font face="Arial, Helvetica, sans-serif" size="2">Ana si Barbu joaca un nou 
+  joc. Ei si-au ales un vector <font face="Courier New, Courier, mono">v</font>, 
+  cu <font face="Courier New, Courier, mono">n</font> componente numere naturale, 
+  numerotate de la <font face="Courier New, Courier, mono">0</font> la <font face="Courier New, Courier, mono">n-1</font>. 
+  Prima componenta a vectorului (<font face="Courier New, Courier, mono">v[0]</font>) 
+  este <font face="Courier New, Courier, mono">0</font>. Celelalte componente 
+  sunt numere naturale nenule. <br>
+  Asupra acestui vector ei executa alternativ mutari de tipul urmator: se alege 
+  o pozitie <font face="Courier New, Courier, mono">i</font> (<font face="Courier New, Courier, mono">0 
+  &lt; i &lt; n</font>) si o valoare intreaga <font face="Courier New, Courier, mono">x</font> 
+  (<font face="Courier New, Courier, mono">0 &lt; x &lt;= v[i]</font>), apoi <font face="Courier New, Courier, mono">v[i]</font> 
+  scade cu <font face="Courier New, Courier, mono">x</font>, iar <font face="Courier New, Courier, mono">v[i-1]</font> 
+  creste cu <font face="Courier New, Courier, mono">x</font>. <br>
+  Prima mutare este executata de Ana. Pierde jucatorul care nu mai poate executa 
+  nici o operatie.</font></p>
+<b>
+<p><font face="Arial, Helvetica, sans-serif" size="3">Cerinta</font></p>
+</b><font size="3">
+<p><font face="Arial, Helvetica, sans-serif" size="2">Sa se determine daca Ana 
+  are sau nu strategie sigura de castig. In cazul in care Ana are strategie de 
+  castig aflati perechea (<font face="Courier New, Courier, mono">i</font>, <font face="Courier New, Courier, mono">x</font>) 
+  care reprezinta prima mutare ce poate fi facuta de acesta astfel incat Ana sa 
+  aiba in continuare strategie de castig. </font></p>
+</font><b>
+<p><font face="Arial, Helvetica, sans-serif" size="3">Date de intrare</font></p>
+</b>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Pe prima linie a fisierului 
+  de intrare <font face="Courier New, Courier, mono">vector.in</font> se afla 
+  numarul <font face="Courier New, Courier, mono">n</font>. Urmatoarea linie contine 
+  numerele naturale <font face="Courier New, Courier, mono">v[1]</font>, <font face="Courier New, Courier, mono">v[2]</font>, 
+  ..., <font face="Courier New, Courier, mono">v[N-1]</font>, separate de cate 
+  un spatiu.<br>
+</font></p>
+<b>
+<p><font face="Arial, Helvetica, sans-serif" size="3">Date de iesire</font></p>
+</b>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Pe prima linie a fisierului 
+  <font face="Courier New, Courier, mono">vector.out</font> se va afisa cifra 
+  <font face="Courier New, Courier, mono">1</font> daca Ana are strategie de castig, 
+  respectiv cifra <font face="Courier New, Courier, mono">0</font> in caz contrar. 
+  Daca Ana are strategie sigura de castig, pe cea de a doua linie se vor afisa 
+  doua numere naturale <font face="Courier New, Courier, mono">i</font> si <font face="Courier New, Courier, mono">x</font>, 
+  separate printr-un singur spatiu, care reprezinta o prima mutare optima a Anei. 
+  In cazul in care exista mai multe solutii se va alege solutia cu <font face="Courier New, Courier, mono">i</font> 
+  minim. In cazul in care exista mai multe solutii cu <font face="Courier New, Courier, mono">i</font> 
+  minim, se va alege solutia cu <font face="Courier New, Courier, mono">x</font> 
+  minim. <br>
+</font></p>
+<b>
+<p><font face="Arial, Helvetica, sans-serif" size="3">Restrictii</font></p>
+</b><font size="3">
+</font>
+<ul>
+  <font face="Courier New" size="3"> 
+  <li><font face="Courier New, Courier, mono" size="2">1 &lt;= n &lt;= 2<sup>17</sup></font></li>
+  <li><font face="Courier New, Courier, mono" size="2">v[0] = 0</font></li>
+  <li><font face="Courier New, Courier, mono" size="2">0 &lt; v[i] &lt; 2<sup>30</sup>, 
+    v[i]<font face="Arial, Helvetica, sans-serif"> numar natural, pentru orice 
+    </font>i <font face="Arial, Helvetica, sans-serif">cu</font> 0 &lt; i &lt; 
+    N</font></li>
+  <li><font face="Courier New, Courier, mono" size="2"><font face="Arial, Helvetica, sans-serif">Se 
+    presupune ca Ana si Barbu joaca perfect.</font></font></li>
+  <li><font face="Courier New, Courier, mono" size="2"><font face="Arial, Helvetica, sans-serif">Spunem 
+    ca Ana are strategie sigura de castig daca, in conditiile in care Ana joaca 
+    perfect, indiferent de mutarea pe care o face Barbu, el va pierde.</font><b><br>
+    </b></font></li>
+  </font> 
+</ul>
+<b>
+<p><font face="Arial, Helvetica, sans-serif" size="3">Exemplu</font></p>
+</b>
+<p align="left">
+<table border="1" cellpadding="2" cellspacing="2" width="421">
+  <tbody> 
+  <tr> 
+    <td valign="top" width="50%"> 
+      <p><font face="Courier New, Courier, mono"><font size="3"><font size="2">vector.in</font> 
+        </font></font></p>
+    </td>
+    <td valign="top" width="50%"> 
+      <p><font face="Courier New, Courier, mono"><font size="3"><font size="2">vector.out</font> 
+        </font></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top" width="50%"> 
+      <p><font face="Courier New, Courier, mono"><font size="3"><font size="2">3<br>
+        1947 1986</font> </font></font></p>
+    </td>
+    <td valign="top" width="50%"> 
+      <p><font face="Courier New, Courier, mono"><font size="3"><font size="2">1<br>
+        1 1947</font> </font></font></p>
+    </td>
+  </tr>
+  </tbody> 
+</table>
+</p><p></p>
+<p></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>Timp maxim de executie/test</b>: 
+  0.1 secunde</font></p>
+<p align="right"><font face="Arial, Helvetica, sans-serif" size="2"><i>Tiberiu-Lucian 
+  Florea</i><br>
+  </font><font face="Arial, Helvetica, sans-serif" size="2">Universitatea Bucuresti, 
+  Facultatea de Matematica si Informatica<br>
+  </font><font face="Arial, Helvetica, sans-serif" size="2"><a href="mailto:vasile@info.ro">Contact:tiberiu.florea@gmail.com</a></font></p>
+</body></html>

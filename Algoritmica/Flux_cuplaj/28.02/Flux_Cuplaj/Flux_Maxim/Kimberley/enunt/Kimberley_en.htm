@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>kimberley</title>
+</head>
+
+<body bgcolor="#ffffff" link="#0000ff" text="#000000" vlink="#ff00ff">
+<font face="Arial, Helvetica, sans-serif" size="2"> <B><font size="4">kimberley</font></B> 
+<p align="justify"> The history of Kimberley City begins with the first diamond discovered in South Africa, east of Orange river, in 1867.<BR> The first houses built in this place by diamond diggers are now in the center of the city.<BR> Between 1870-1880, the Kimberley mine was producing more than 95% of the total number of diamonds in the entire world. This is where the famous &quot;<I>Star of Africa</I>&quot; diamond was found. <BR> The hill that was the initial dig is now gone, and there is a huge pit where it stood. <BR>
+  <BR> Let's go back to 1870, back when the mine was made up of a series of underground tunnels.<BR> Our problem supposes that Kimberley mine is made up of <font face="Courier New, Courier, mono">G</font> very, very narrow tunnels. The time needed by a miner to go through any of the tunnels is of one minute. During each minute, only a single miner may cross a tunnel, either one way or the other. <BR> Work areas are called &quot;rooms&quot;. Each room is the end of one or more tunnels and each tunnel has at its two ends a room. Any two rooms communicate via one or more tunnels that unite them directly. <BR> There are <font face="Courier New, Courier, mono"> N </font> rooms in Kimberley mine, which the miners identify via numbers <font face="Courier New, Courier, mono"> 1, 2, ... N</font>. We suppose that a team made up of <font face="Courier New, Courier, mono"> M </font> miners finished working the night shift. They all worked in work area number <font face="Courier New, Courier, mono"> S</font>. They have to reach room<font face="Courier New, Courier, mono"> D</font>, which is located at the mine's exit. There is always a risk of tunnel cave-ins. For this reason, the miner team wants to exit the mine in the shortest amount of time possible. </p>
+<font size="3"><B>Task</B></font> 
+<p align="justify"> Find the minimum required amount of time so that all miners from the night shift may exit the mine. </p>
+<B><font size="3">Input Data </font></B> 
+<p align="justify"> File <font face="Courier New, Courier, mono"><B>kimberley.in</B></font> has on line one positive integers <font face="Courier New, Courier, mono"> N </font> and <font face="Courier New, Courier, mono"> G</font>, on line two three positive integers <font face="Courier New, Courier, mono"> S</font>, <font face="Courier New, Courier, mono"> D </font> and M, and on the following <font face="Courier New, Courier, mono"> G </font> lines, two positive integers representing the number of the rooms at the end of each of the <font face="Courier New, Courier, mono"> G </font> tunnels. The numbers from each line are separated by a space. </p>
+<font size="3"><B>Output Data </B></font> 
+<p align="justify"> File <font face="Courier New, Courier, mono"><B>kimberley.out</B></font> will contain a single line with number <font face="Courier New, Courier, mono"> T</font>, representing the shortest amount of time in which all miners will reach room <font face="Courier New, Courier, mono"> D</font>, the Kimberley mine exit. </p>
+<B><font size="3">Restrictions and Mentions </font></B> 
+<p> 
+<ul>
+  <li><font face="Courier New, Courier, mono">1 &lt;= N, S, D &lt;= 50, 1 &lt;= G &lt;= 100, 1 &lt;= M &lt;= 150</font></li>
+  <li>No tunnel has the same room at both ends.</li>
+  <li>Any two room are connected by no more than one tunnel.</li>
+  <li>Any room is sufficiently large to host all the miners at the same time.</li>
+  <li>The only persons in the mine are the <font face="Courier New, Courier, mono"> N </font> miners from the night shift.</li>
+</ul>
+<p></P><p></p>
+<font size="3"><B>Example</B></font> 
+<table border="1" cellpadding="2" cellspacing="2" >
+  <tbody> 
+  <tr> 
+    <td valign="top"> <font face="Courier New, Courier, mono" size=2><B>kimberley.in</B></font> 
+    </td>
+    <td valign="top"> <font face="Courier New, Courier, mono" size=2><B>kimberley.out</B></font> 
+    </td>
+    <td valign="top" width="55%"> <font face="Courier New, Courier, mono" size=2><B><font face="Arial, Helvetica, sans-serif">Explanation</font></B></font> 
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono"> 4 5<BR> 4 1 4 <BR> 4 2<BR> 4 3<BR> 2 5 <BR> 3 5<BR> 5 1 <BR>
+      </font> </font></td>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono"> 5</font><BR>
+      </font> </td>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> In minute one, miner <font face="Courier New, Courier, mono">1</font> goes to room <font face="Courier New, Courier, mono">2</font> and miner <font face="Courier New, Courier, mono">2</font> goes to room <font face="Courier New, Courier, mono">3</font>.<BR> In minute two, miner <font face="Courier New, Courier, mono">1</font> goes to room <font face="Courier New, Courier, mono">5</font>, miner <font face="Courier New, Courier, mono">2</font> goes to room <font face="Courier New, Courier, mono">5</font> and miner <font face="Courier New, Courier, mono">3</font> goes to room <font face="Courier New, Courier, mono">2</font>.<BR> In minute three, miner <font face="Courier New, Courier, mono">1</font> goes to room <font face="Courier New, Courier, mono">1</font> and miner <font face="Courier New, Courier, mono">3</font> goes to room <font face="Courier New, Courier, mono">5</font>.<BR> In minute four, miner <font face="Courier New, Courier, mono">2</font> goes to room <font face="Courier New, Courier, mono">1</font> .<BR> In minute five, miner <font face="Courier New, Courier, mono">3</font> goes to room <font face="Courier New, Courier, mono">1</font> .<BR>
+      </font></td>
+  </tr>
+  </tbody> 
+</table>
+<p align="justify"> <B> Time limit: 0.15 seconds<BR> Total available memory: 7 Mb, of which 1 Mb for the stack.</B></p>
+<p align="justify">&nbsp;</p>
+<B></B><B> 
+<p align="right"> prof. <I>Constantin Galatan</I><BR> C.N. <I>&quot;Liviu Rebreanu&quot;</I> Bistri&#355;a<BR> Contact: <a href="mailto:tucu_galatan@yahoo.com"> tucu_galatan@yahoo.com</a><BR>
+</p>
+</B></font> 
+</body>
+</html>
+
+
+

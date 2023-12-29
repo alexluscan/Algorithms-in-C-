@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0042)http://ipsc.ksp.sk/problems/ipsc2003/a.php -->
+<HTML><HEAD><TITLE>IPSC 2003 Problem A - Arranging Flowers</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META 
+content="Internet Problem Solving Contest (IPSC) is an online programming contest for teams up three people." 
+name=description>
+<META content="IPSC, programming, contest, online contest" name=keywords><LINK 
+href="IPSC 2003 Problem A - Arranging Flowers_files/main.css" type=text/css 
+rel=stylesheet>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#191970 vLink=#cd853f aLink=#ffdead link=#f4a460 bgColor=white><!-- NAVIGATION BAR -->
+<TABLE class=navbar cellSpacing=0 width="100%" bgColor=#191970>
+  <TBODY>
+  <TR>
+    <TH align=left><A href="http://ipsc.ksp.sk/">home</A> &nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/problems/old.php">problem 
+      archive</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/results/old.php">previous 
+      results</A>&nbsp;|&nbsp; <A href="http://ipsc.ksp.sk/team/">organizing 
+      team</A> </TH>
+    <TH>&nbsp;</TH></TR><!-- guide, pravidla, etc. -->
+  <TR>
+    <TH align=left><A 
+      href="http://ipsc.ksp.sk/guide.php">guide</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/rules.php">rules</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/techinfo.php">technical info</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/clock.php">clock</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/practice.php">practice session</A>&nbsp;|&nbsp; 
+      <A href="http://ipsc.ksp.sk/problems/sample.php">sample problem set</A> 
+</TH>
+    <TH class=clock vAlign=center align=right rowSpan=2><FONT 
+      color=#fafad2>5:48am</FONT> </TH></TR>
+  <TR>
+    <TH align=left><A href="http://ipsc.ksp.sk/problems/">problem 
+      set</A>&nbsp;|&nbsp; <A href="http://ipsc.ksp.sk/results/">online 
+      standings</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/register/">registration</A>&nbsp;|&nbsp; <A 
+      href="http://ipsc.ksp.sk/register/regteams.php">registered 
+      teams</A>&nbsp;|&nbsp; </TH></TR></TBODY></TABLE><!-- end of NAVIGATION BAR --><!-- Title and Logo -->
+<TABLE class=title width="100%">
+  <TBODY>
+  <TR vAlign=top>
+    <TD width=140><A href="http://ipsc.ksp.sk/"><IMG title=Home 
+      alt="IPSC Logo" 
+      src="IPSC 2003 Problem A - Arranging Flowers_files/ipsc.gif" 
+    border=0></A></TD>
+    <TD align=middle>
+      <H5>Internet Problem Solving Contest</H5>
+      <H1>IPSC 2003<BR>Problem A - Arranging Flowers</H1></TD></TR></TBODY></TABLE><!-- end of Title and Logo -->
+<TABLE class=page width="97%" align=center>
+  <TBODY>
+  <TR>
+    <TD>
+      <UL>
+        <LI><A href="http://ipsc.ksp.sk/problems/ipsc2003/a1.in">Easy input data 
+        set - A1</A> 
+        <LI><A href="http://ipsc.ksp.sk/problems/ipsc2003/a2.in">Difficult input 
+        data set - A2</A> </LI></UL>
+      <P>Bratislava has a long tradition in organizing an international flower 
+      exhibition – <A href="http://www.flora.sk/">Flora</A>. Professor <A 
+      href="http://www.edi.fmph.uniba.sk/andrej">Andrew</A> as a true flower 
+      lover visited the Flora exhibition also this year. He was pleased by the 
+      most beautiful flowers and other plants of the world – roses, orchids, 
+      magnolias, cactuses. All flowers were nicely arranged. </P>
+      <P>The flower arrangement that was the most appealing to him (at least 
+      mathematically) was composed of many kinds of flowers arranged in a 
+      rectangular grid, such that </P>
+      <UL>
+        <LI>each row of the grid contained each kind of flowers exactly once and 
+
+        <LI>each column of the grid contained each kind of flowers at most once. 
+        </LI></UL>
+      <P>Professor Andrew is a good mathematician and soon he realized that the 
+      number of columns of the grid has to be the same as the number of 
+      different kinds of flowers in the arrangement. But soon he encountered a 
+      problem he was unable to solve: He would like to add more rows of flowers 
+      to the arrangement without violating the rules stated above. (Note that he 
+      may not modify the existing rows and therefore he may not use any new 
+      kinds of flowers in the new rows.) Help him add as many rows as possible! 
+      </P>
+      <H3>Input file specification</H3>
+      <P>The input data set describes several flower arrangements; on the first 
+      line their number is given. Each flower arrangement description begins 
+      with two positive integers <B>N</B> and <B>M</B>, representing the number 
+      of columns and rows of the grid. The different kinds of flowers are 
+      represented by numbers <B>1,2,...,N</B>. The following <B>M</B> lines 
+      contain <B>N</B> integers each representing the kinds of flowers in one 
+      row of the arrangement. </P>
+      <H3>Output file specification</H3>
+      <P>For each flower arrangement print <B>K</B> – the maximum number of 
+      lines that can be added to the arrangement. Then print <B>K</B> lines 
+      containing <B>N</B> numbers each, describing the added rows. The numbers 
+      in the output file may be separated by arbitrary whitespaces, e.g. instead 
+      of printing one long line containing <B>N</B> numbers you may print 
+      several shorter lines containing the same numbers in the same order. </P>
+      <H3>Example</H3><B>Input file</B> <PRE>2
+
+3 2
+3 2 1
+1 3 2
+
+4 2
+1 4 3 2
+2 1 4 3
+</PRE><B>Output file</B> <PRE>1
+2 1 3
+
+2
+3 2 1 4
+4 3 2 1
+</PRE><!-- FOOTER -->
+      <HR class=footer>
+
+      <TABLE class=footer width="80%" align=center>
+        <TBODY>
+        <TR>
+          <TD width="15%">e-mails</TD>
+          <TD width="15%"><A href="mailto:ipscreg@ksp.sk">questions</A></TD>
+          <TD width="15%"><A href="mailto:webmaster@ksp.sk">webmaster</A></TD>
+          <TD width=15></TD>
+          <TD width="40%">LAST CHANGE: May, 2003</TD>
+          <TD><!-- Begin Nedstat Basic code --><!-- Title: The Internet Problem Solving Competition --><!-- URL: http://www.ksp.sk/ipsc -->
+            <SCRIPT language=JavaScript 
+            src="IPSC 2003 Problem A - Arranging Flowers_files/basic.js">
+</SCRIPT>
+
+            <SCRIPT language=JavaScript>
+<!--
+  nedstatbasic("AAXgFg9qA69JYkEpU0ZAkfTgWD9w", 0);
+// -->
+</SCRIPT>
+            <NOSCRIPT><A 
+            href="http://v1.nedstatbasic.net/stats?AAXgFg9qA69JYkEpU0ZAkfTgWD9w" 
+            target=_blank><IMG height=18 
+            src="IPSC 2003 Problem A - Arranging Flowers_files/n.gif" width=18 
+            border=0 nosave></A> </NOSCRIPT><!-- End Nedstat Basic code --></TD>
+          <TD width=25></TD></TR></TBODY></TABLE><!--- end of FOOTER --><!-- END OF PAGE --></TD></TR></TBODY></TABLE></BODY></HTML>

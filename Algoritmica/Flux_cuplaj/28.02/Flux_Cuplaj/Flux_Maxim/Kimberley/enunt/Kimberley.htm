@@ -1,0 +1,163 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Kimberley</title>
+</head>
+
+<body bgcolor="#ffffff" link="#0000ff" text="#000000" vlink="#ff00ff">
+<font face="Arial, Helvetica, sans-serif" size="2">
+
+<h3>
+<b><font size="4">Kimberley</font></b>
+</h3>
+
+<p align="justify"> Istoria orasului Kimberley incepe odata cu primul diamant descoperit in Africa de Sud, la sud de raul Orange,
+in 1867.<br>
+Primele case construite in acest loc de catre cautatorii de diamante se pastreaza si acum in centrul orasului.<br>
+
+Intre anii 1870-1880, mina din Kimberley producea peste 95% din totalul de diamante din intreaga lume.
+Aici a fost descoperit faimosul diamant "<I>Steaua Africii</I>". <br>
+Dealul in care s-a sapat initial a disparut, in locul lui ramanand o imensa groapa.  <br>
+<br>
+Ne intoarcem la 1870, in vremea cand mina era formata dintr-o retea de galerii subterane.<br>
+Problema noastra, presupune ca mina Kimberley este formata din G galerii, foarte inguste.
+Timpul necesar unui miner sa parcurga oricare dintre galerii, este de un minut.
+In fiecare minut, doar un singur miner poate sa traverseze o galerie, fie intr-un sens, fie
+in sens opus.
+ <br><br>
+ Fronturile de lucru se numesc "sali". Fiecare sala este capatul uneia sau a mai multor galerii
+si fiecare galerie are la cele doua capete cate o sala.
+Oricare doua sali comunica intre ele printr-o galerie care le uneste direct, sau prin intermediul
+altor galerii.
+ <br><br>
+ Exista <font face="Courier New, Courier, mono"> N </font> sali in mina Kimberley, pe care minerii le identifica prin numerele <font face="Courier New, Courier, mono"> 1, 2, ... N</font>.
+Presupunem ca o echipa formata din <font face="Courier New, Courier, mono"> M </font> mineri, au terminat lucrul in schimbul de noapte. Au lucrat cu totii in
+frontul de lucru din sala cu numarul de ordine <font face="Courier New, Courier, mono"> S</font>.  Ei trebuie sa ajunga in sala cu numarul<font face="Courier New, Courier, mono"> D</font>, care este pozitionata la iesirea din mina.
+Exista in permanenta pericolul prabusirii galeriilor. Din acest motiv, echipa de mineri doreste sa iasa din
+ mina in cel mai scurt timp posibil.
+
+</p>
+
+<h4>Cerinta</h4>
+
+<p align="justify">
+Gasiti timpul minim necesar, pentru ca toti minerii din schimbul de noapte sa poata iesi mina.
+</p>
+
+<h4>Date de intrare</h4>
+<p align="justify">
+Fisierul <font face="Courier New, Courier, mono"><B>kimberley.in</b></font>, are pe prima linie numerele naturale <font face="Courier New, Courier, mono"> N </font> si
+<font face="Courier New, Courier, mono"> G</font>, pe linia a doua
+trei numere naturale <font face="Courier New, Courier, mono"> S</font>, <font face="Courier New, Courier, mono"> D </font> si M, iar pe urmatoare
+<font face="Courier New, Courier, mono"> G </font> linii, cate doua numere naturale reprezentand numerele de ordine
+ale salilor de la capatul fiecareia dintre cele  <font face="Courier New, Courier, mono"> G </font> galerii.
+Numerele de pe fiecare linie sunt despartite prin cate un singur spatiu.
+
+
+
+<p></p>
+
+<h4>Date de iesire</h4>
+<p align="justify"> Fisierul <font face="Courier New, Courier, mono"><b>kimberly.out</b></font>
+   va contine o singura linie pe care va fi scris numarul <font face="Courier New, Courier, mono"> T</font>, reprezentand cel mai surt timp
+posibil in care toti minerii vor ajunge in sala <font face="Courier New, Courier, mono"> D</font>, la iesirea din mina Kimberley.
+
+ </p>
+
+<h4>Restrictii si precizari</h4>
+<p>
+<ul><li><font face="Courier New, Courier, mono">1 <= N, S, D <= 50, 1 <= G <= 100, 1 <= M <= 150</font></li>
+<li>Nici o galerie nu are la capete aceeasi sala.</li>
+<li>Oricare doua sali sunt conectate prin cel mult o galerie.</li>
+<li>Oricare dintre sali, este suficient de incapatoare, incat poate adaposti toti minerii
+in acelasi moment de timp.</li>
+<li>Singurele persoane din mina se considera a fi cei <font face="Courier New, Courier, mono"> M </font> mineri din schimbul de noapte.</li>
+
+</ul>
+<p></p>
+
+<h4>Exemplu</h4>
+<table border="1" cellpadding="7" cellspacing="1" width="100%">
+<tbody>
+
+<tr>
+<td valign="top">
+<font face="Courier New, Courier, mono" size=2><b>kimberley.in</b></font>
+</td>
+<td valign="top">
+
+<font face="Courier New, Courier, mono" size=2><b>kimberley.out</b></font>
+
+</td>
+<td valign="top" width="55%">
+<font face="Courier New, Courier, mono" size=2><b>Explicatie</b></font>
+</td>
+</tr>
+
+<tr>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     4 5<br>
+	 4 1 4 <br>
+
+     4 2<br>
+     4 3<br>
+     2 5 <br>
+     3 5<br>
+     5 1 <br>
+
+     </font>
+
+</td>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     5</font><br>
+</font>
+
+</td>
+<td valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+
+In primul minut, minerul <font face="Courier New, Courier, mono">1</font>
+trece in sala <font face="Courier New, Courier, mono">2</font> si minerul <font face="Courier New, Courier, mono">2</font>
+trece in sala <font face="Courier New, Courier, mono">3</font>.<br>
+
+In al doilea minut, minerul <font face="Courier New, Courier, mono">1</font>
+trece in sala <font face="Courier New, Courier, mono">5</font>, minerul <font face="Courier New, Courier, mono">2</font>
+trece in sala <font face="Courier New, Courier, mono">5</font> si minerul <font face="Courier New, Courier, mono">3</font>
+trece in sala <font face="Courier New, Courier, mono">2</font>.<br>
+
+In al treilea minut, minerul <font face="Courier New, Courier, mono">1</font>
+trece in sala <font face="Courier New, Courier, mono">1</font> si minerul <font face="Courier New, Courier, mono">3</font>
+trece in sala <font face="Courier New, Courier, mono">5</font>.<br>
+
+In al patrulea minut, minerul <font face="Courier New, Courier, mono">2</font>
+trece in sala <font face="Courier New, Courier, mono">1</font> .<br>
+
+In al cincilea minut, minerul <font face="Courier New, Courier, mono">3</font>
+trece in sala <font face="Courier New, Courier, mono">1</font> .<br>
+
+
+</font></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<p align="justify"> <b> Timp de executie/test: 0.1 secunde</b></p>
+
+<b><b>
+
+<p align="right">
+prof. <i>Constantin Galatan</i><br>
+
+C.N. <i>"Liviu Rebreanu"</I> Bistrita<br>
+Contact: <a href="mailto:tucu_galatan@yahoo.com"> tucu_galatan@yahoo.com</a><br>
+</p>
+
+</b></b></font>
+</body>
+</html>
+
+

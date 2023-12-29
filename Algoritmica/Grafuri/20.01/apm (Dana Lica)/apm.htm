@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www.liis.ro/~campion/problems/3/156/apm.htm -->
+<HTML><HEAD><TITLE>apm</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY style="tab-interval: .5in" text=#000000 vLink=#000000 aLink=#000000 
+link=#000000 bgColor=#ffffff>
+<P><B><FONT face="Arial, Helvetica, sans-serif" size=4>apm</FONT></B></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>Se considera un arbore având 
+costuri atasate pe muchii si un sir de numere naturale. Sa se adauge arborelui 
+un numar maxim de muchii având costuri dintre numerele date, astfel încât graful 
+obtinut sa aiba ca arbore partial de cost minim arborele initial. </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2>&nbsp;<B><FONT 
+size=3>Date de intrare</FONT></B></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2>Pe prima linie 
+a fisierului text <B><FONT face="Courier New, Courier, mono">apm.in</FONT></B> 
+se afla numarul natural <FONT face="Courier New, Courier, mono">n</FONT> 
+reprezentând numarul nodurilor din arbore. Pe urmatoarele <FONT 
+face="Courier New, Courier, mono">n-1</FONT> linii se gasesc câte trei numere 
+naturale separate prin cate un spatiu, sub forma <FONT 
+face="Courier New, Courier, mono">i j c</FONT>, având semnificatia: exista 
+muchie de la <FONT face="Courier New, Courier, mono">i</FONT> la <FONT 
+face="Courier New, Courier, mono">j</FONT> avand costul <FONT 
+face="Courier New, Courier, mono">c</FONT>. </FONT><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>Pe urmatoarele linii se 
+afla sirul de numere dat, câte un numar pe o linie. </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2><B><FONT 
+size=3>Date de iesire</FONT> </B></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2>Pe fiecare 
+linie a fisierului de iesire <B><FONT 
+face="Courier New, Courier, mono">apm.out</FONT></B> se vor scrie cate trei 
+numere <FONT face="Courier New, Courier, mono">i j c</FONT>, având semnificatia: 
+"adaugam o <B><I>muchie </I></B>între nodurile <FONT 
+face="Courier New, Courier, mono">i</FONT> si <FONT 
+face="Courier New, Courier, mono">j</FONT> avand costul <FONT 
+face="Courier New, Courier, mono">c</FONT>". Cele trei numere se vor separa prin 
+câte un spatiu. </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=3><B>Restrictii 
+si precizari</B></FONT></P>
+<P><FONT face="Courier New, Courier, mono" size=2>0&lt;n&lt;256</FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" size=2>Costurile muchiilor arborelui sunt 
+numere naturale nenule &lt;=32000</FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" size=2>In sirul de numere dat exista cel 
+mult 32000 de valori (numere naturale nenule &lt;=30000).</FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>Fiecare element din sir 
+poate reprezenta costul unei singure muchii adaugate. </FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>Elementele sirului nu 
+sunt neaparat distincte. </FONT><BR><FONT face="Arial, Helvetica, sans-serif" 
+color=#000000 size=2>Între oricare doua noduri din graf va exista cel mult o 
+muchie. </FONT><BR><FONT face="Arial, Helvetica, sans-serif" color=#000000 
+size=2>În cazul în care nu se poate adauga nici o muchie, în fisierul de iesire 
+se va scrie o singura linie ce va contine valoarea 0. </FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" size=2>În graful obtinut dupa adaugarea 
+muchiilor pot exista mai multi arbori partiali de cost minim, dar costul 
+acestora trebuie sa fie identic cu al arborelui initial. </FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>În cazul în care 
+problema admite mai multe solutii, în fisierul de iesire se va scrie una 
+singura. </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2><B>Exemplu 
+</B></FONT></P>
+<TABLE cellSpacing=5 cellPadding=5 width=330>
+  <TBODY>
+  <TR>
+    <TD><FONT face="Courier New, Courier, mono" color=#000000 
+      size=2><B>apm.in</B></FONT></TD>
+    <TD><FONT face="Courier New, Courier, mono" color=#000000 
+      size=2><B>apm.out</B></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Courier New, Courier, mono" size=2>4<BR>1 2 2<BR>3 4 4 
+      <BR>3 1 2 <BR>2 <BR>5 <BR>3 <BR></FONT></TD>
+    <TD vAlign=top align=left><FONT face="Courier New, Courier, mono" size=2>1 
+      4 5 <BR>2 3 3 <BR></FONT></TD></TR></TBODY></TABLE>
+<P><FONT face="Arial, Helvetica, sans-serif" color=#000000 size=2><B>Timp maxim 
+de executie:</B> 0.1 secunde / test</FONT></P>
+<P align=right><FONT face="Arial, Helvetica, sans-serif" color=#000000 
+size=2><I>Prof. <B>Dana Lica</B></I></FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>Colegiul Na&#355;ional 
+<I>"I.L. Caragiale"</I> Ploie&#351;ti</FONT><BR><FONT 
+face="Arial, Helvetica, sans-serif" color=#000000 size=2>Contact: <A 
+href="mailto:danal182001@yahoo.com">danal182001@yahoo.com</A> 
+</FONT></P></BODY></HTML>

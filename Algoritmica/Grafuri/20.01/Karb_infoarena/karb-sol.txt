@@ -1,0 +1,32 @@
+﻿Această problemă admite o mulţime de soluţii cu diferite complexităţi. Noi vom enumera doar trei.
+
+
+O soluţie în complexitate O(M2 log*(N)) ar obţine în jur de 40 de puncte. Considerăm mulţimea tuturor arborilor de acoperire. 
+Între arborele de acoperire de cost minim şi arborele de acoperire de cost maxim există o serie de arbori de acoperire intermediari, 
+cu proprietatea că există o ordine astfel încât oricare doi arbori consecutivi diferă doar prin două muchii iar costul lor prin exact 1. 
+Astfel, dacă vom elimina o muchie şi vom adăuga o alta costul arborelui de acoperire minim / maxim va creşte / scădea cu 0 sau 1. 
+Algoritmul constă în considerarea succesivă a fiecărei muchii; dacă elimininând-o vom obţine că avem K cuprins între costul arborelui de acoperire minim, 
+respectiv maxim, atunci o vom păstra, altfel, o vom elimina. 
+Soluţia va fi formată din muchiile care au rămas, în număr de N - 1.
+
+
+
+O soluţie alternativă în complexitate O(M*N), ce obţine în jur de 60 de puncte, dar care foloseşte aceeaşi idee ca soluţia anterioară, 
+porneşte de la un arbore de acoperire minim căruia i se adaugă muchii de cost 1 astfel încât pe ciclul ce îl formează să existe o muchie de cost 0. 
+Muchia din urmă va fi eliminată şi se va rămâne cu un arbore de acoperire cu un cost mai mare cu 1. 
+Acest pas se repetă până costul arborelui de acoperire devine K.
+
+
+
+Soluţia optimă, în complexitate O(M log*(N)), urmează paşii de mai jos:
+
+    
+cu muchiile de cost 0 descompune graful în componente conexe;
+    
+caută muchiile de cost 1 care unesc aceste componente, astfel încât să nu se formeze un ciclu între acestea;
+    
+consideră doar muchiile de cost 1 de la pasul anterior la care adaugă altele de acelaşi cost până ce vor fi în număr de K;
+    
+adaugă muchii de cost 0 până ce se formează un arbore de acoperire;
+
+Ultimul pas are sens datorită pasului al doilea.

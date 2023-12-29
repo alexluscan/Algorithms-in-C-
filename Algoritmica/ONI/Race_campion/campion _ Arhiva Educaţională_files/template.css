@@ -1,0 +1,73 @@
+.nowr
+{
+	white-space:pre;
+}
+
+.titlu 
+{ 
+	color:#385d9c; 
+	font-size:44px; 
+	font-weight:bold; 
+	font-family:arial;
+} 
+.subtitlu
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#385d9c;
+	font-family:arial;
+}
+
+.courier
+{
+	font-family:courier new;
+}
+.antet_
+{
+	background-color:#eeeeee;
+	border:thin #dddddd solid;
+}
+.tabel_
+{
+	border:thin #dddddd solid;
+}
+.table_
+{
+	border:thin #cccccc solid;
+}
+.fundalee
+{
+	background-color:#f6f6f6;
+	background-image:url(hr.png);
+	background-position:bottom right;
+	background-repeat:repeat-x;
+}
+.fundaljosee
+{
+	background-color:#f6f6f6;
+	background-image:url(hj.png);
+	background-position:top right;
+	background-repeat:repeat-x;
+}
+.fundalcampion
+{
+	background-image:url(sigla.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+.gri
+{
+	color:#000000;
+}
+.albastru
+{
+	color:#385d9c;
+}
+.bold
+{
+	font-weight:bold;
+}
+.italic
+{
+	font-style:italic;
+}

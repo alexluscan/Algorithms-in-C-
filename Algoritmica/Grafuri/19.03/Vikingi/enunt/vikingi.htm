@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>Vikingi</title>
+</head>
+
+<body bgcolor="#ffffff" link="#0000ff" text="#000000" vlink="#ff00ff">
+<font face="Arial, Helvetica, sans-serif" size="2">
+
+<h3>
+<b><font size="4">Vikingi</font></b>
+</h3>
+
+<p align="justify"> Suntem în anul 1066. Regele viking, Harald al III-lea se pregăteşte să cucerească Anglia. 
+Va porni pe mare împreună cu înfricoşătoarea sa armată, la bordul a nu mai puţin temutelor corăbii vikinge (<i>longships</i>). <br>
+
+În această campanie, va folosi doar corăbii noi, identice. Înainte de plecare, trebuie să determine 
+capacitatea de transport a noilor sale corăbii. Prin capacitate de transport, el înţelege numărul maxim de vikingi 
+pe care o corabie îi poate transporta fără ca să se scufunde. 
+ Pentru aceasta, regele decide că <font face="Courier New, Courier, mono"> C</font> corăbii şi 
+ <font face="Courier New, Courier, mono"> V</font> vikingi vor fi implicaţi în testări. 
+ Va ordona mai multe lansări la apă. La fiecare lansare, o singură corabie trece de pe uscat pe apă, 
+ cu <font face="Courier New, Courier, mono"> n</font> vikingi la bord, unde <font face="Courier New, Courier, mono"> n <= V</font>. 
+Dacă numărul de vikingi depăşeşte capacitatea de transport a navei, atunci corabia se scufundă. 
+O corabie scufundată nu mai poate fi recuperată, în timp ce o corabie care a fost lansată la apă şi nu s-a scufundat, 
+poate fi din nou lansată la apă. Când o corabie se scufundă, soldaţii de la bord înoată până la mal, 
+astfel încât pentru fiecare lansare, Harald are mereu la dispoziţie aceeaşi <font face="Courier New, Courier, mono"> V</font> vikingi, 
+din care alege <font face="Courier New, Courier, mono"> n</font>. Toţi soldaţii se presupun a fi identici (greutate identică, desigur). 
+Când o corabie pluteşte, nici un viking nu poate să urce sau să coboare. Vikingii se îmbarcă sau debarcă doar la mal, 
+înaintea lansării la apă. 
+<br>
+<br>Regele Harald doreşte un plan care să-i permită să efectueze un număr minim de lansări la apă, deoarece acestea sunt consumatoare de energie 
+ şi de timp, ori ultimul mare rege viking se grăbeşte să-şi întâlnească destinul ...
+
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Cerinţă</strong></font><br>
+
+ Se cere numărul minim necesar de lansări la apă, care permit identificarea cu exactitate a 
+ capacitatăţii de transport a corăbiilor. 
+<br><br> 
+<p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Date de intrare</font></strong><br>
+Fişierul de intrare <font face="Courier New, Courier, mono"><B>vikingi.in</b></font> 
+conţine pe prima linie, despărţite printr-un spaţiu, două naturale: <font face="Courier New, Courier, mono"> V</font> 
+şi <font face="Courier New, Courier, mono"> C</font>. 
+
+</p>
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Date de ieşire</font></strong><br>
+Fişierul de ieşire <font face="Courier New, Courier, mono"><B>vikingi.out</b></font> va conţine un singur număr 
+natural <font face="Courier New, Courier, mono"> L</font>, calculat pentru cazul cel mai defavorabil, 
+reprezentând numărul minim de lansări la apă în urma cărora se poate determina cu exactitate capacitatea unei corăbii.
+
+
+
+<p>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Restrictii si precizari</font></strong>
+
+<ul><li><font face="Courier New, Courier, mono">1 <= V <= 2500</font></li>
+<li><font face="Courier New, Courier, mono">1 <= C <= 2500</font></li>
+<li>Toate bărcile sunt identice. Aceasta presupune şi faptul că au aceeaşi capacitate de transport.</li>
+<li>Pentru toate datele de test, numărul <font face="Courier New, Courier, mono">V</font> 
+de vikingi este suficient de mare pentru a se putea determina capacitatea corăbiilor.</li>
+</ul>
+
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Exemple</strong>
+
+<table border="1" cellpadding="7" cellspacing="1" width="100%">
+<tbody>
+
+<tr>
+<td valign="top">
+<font face="Courier New, Courier, mono" size=2><b>vikingi.in</b></font>
+</td>
+<td valign="top">
+
+<font face="Courier New, Courier, mono" size=2><b>vikingi.out</b></font>
+
+</td>
+<td valign="top" width="55%">
+<font face="Courier New, Courier, mono" size=2><b>Explicaţie</b></font>
+</td>
+</tr>
+
+<tr>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     7 2<br>
+	
+
+     </font>
+
+</td>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     4</font><br>
+</font>
+
+</td>
+<td valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+Sunt necesare minimum patru lansări la apă pe cazul cel mai defavorabil
+</font></td>
+</tr>
+
+
+<tr>
+    <td valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     5 1<br>
+     </font>
+
+</td>
+    <td
+      valign="top"> <font face="Arial, Helvetica, sans-serif" size="2"> <font face="Courier New, Courier, mono">
+     5</font><br>
+</font>
+
+</td>
+<td valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+
+Sunt necesare cel puţin cinci lansări în cazul cel mai defavorabil, cu câte 
+<font face="Courier New, Courier, mono">1</font>, <font face="Courier New, Courier, mono">2</font>, 
+<font face="Courier New, Courier, mono">3</font>, <font face="Courier New, Courier, mono">4</font>, 
+<font face="Courier New, Courier, mono">5</font> vikingi îmbarcaţi
+
+
+</font></td>
+</tr>
+
+
+</tbody>
+</table>
+
+<p align="justify">  <b>Timp maxim de execuţie/test: </b>0.5 secunde.<br>
+<b>Memorie disponibilă: </b>2 MB din care 1 MB pentru stivă. 
+                    
+</b></p>
+
+
+
+<p align="right">
+prof. <i>Constantin Gălăţan</i><br>
+
+C.N. <i>"Liviu Rebreanu"</I> Bistrita<br>
+contact: <a href="mailto:tucu_galatan@yahoo.com"> tucu_galatan@yahoo.com</a><br>
+</p>
+
+</b></font>
+</body>
+</html>
+
+

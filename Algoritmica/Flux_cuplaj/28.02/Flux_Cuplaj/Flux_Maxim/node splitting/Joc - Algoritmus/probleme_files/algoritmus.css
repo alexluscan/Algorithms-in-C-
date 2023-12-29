@@ -1,0 +1,30 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; BACKGROUND: url(/images/bg0.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #4f4f4f; PADDING-TOP: 0px; FONT-FAMILY: Tahoma, Verdana, Arial; TEXT-ALIGN: left
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #4f4f4f; FONT-FAMILY: Tahoma, Verdana, Arial; TEXT-ALIGN: left
+}
+TH {
+	FONT-SIZE: 11px; COLOR: #4f4f4f; FONT-FAMILY: Tahoma, Verdana, Arial; TEXT-ALIGN: left
+}
+A {
+	COLOR: #0000aa; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000055; TEXT-DECORATION: underline
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 15pt; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+A.white {
+	FONT-WEIGHT: bold; COLOR: white; TEXT-DECORATION: none
+}
+A.white:hover {
+	FONT-WEIGHT: bold; COLOR: white; TEXT-DECORATION: none
+}
+A.white:visited {
+	FONT-WEIGHT: bold; COLOR: white; TEXT-DECORATION: none
+}
